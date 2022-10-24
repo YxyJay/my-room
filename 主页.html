@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiyu Yang</title>
+    <link rel="stylesheet" href="css/index.css">
+	<style>a{  /*去掉下划线*/
+    text-decoration: none;  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,450%);
+	
+    /* 设置字体大小 */
+    font-size: 24px;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    /* 字母变大写 */
+    text-transform: uppercase;
+    /* 设置成胶囊状 */
+    border-radius: 50px;
+    z-index: 1;
+}
+/* 设置发光 */
+a::before{
+    content: "";
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    top: -1px;
+    bottom: -1px;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 50px;
+    filter: blur(10px);
+    z-index: -1;
+}
+a:hover::before{
+    animation: sun 8s infinite;
+}
+a:hover{
+    animation: sun 8s infinite;
+}
+/* 设置流光 */
+@keyframes sun{
+    100%{
+        background-position: -400% 0;
+    }
+}
+.imgsize{z-index:0;position:absolute;top:80px;left:120px;opacity:20%}
+	h1{z-index:1;position:relative}
+		h2{z-index:1;position:relative}
+	</style>
+</head>
+<body>
+	<div id="background" style="background-color:#393D49;height:730px;width:100%;float:left;text-align:center;">
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<h1 z-index="1"><font color="white" size="8">你居然找到了这，既然来了就别走了！</font></h1>
+		<h2><font color="white" size="6">点击下面的按钮来认识我吧</font></h2>
+		<img class="imgsize" src="https://bb9.sufe.edu.cn/bbcswebdav/users/2022213315/JAY.png" width="90%" height="80%width">
+	</div>
+    <a href="https://bb9.sufe.edu.cn/bbcswebdav/users/2022213315/%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF.html">click</a>
+</body>
+</html>
